@@ -600,7 +600,7 @@
       #define SD_DETECT_PIN                   49
 
       #ifndef KILL_PIN
-        #define KILL_PIN                      41
+        #define KILL_PIN                      -1
       #endif
 
       #if ENABLED(MKS_MINI_12864)                 // Added in Marlin 1.1.6
@@ -653,12 +653,12 @@
 
     #elif ENABLED(MINIPANEL)
 
-      #define BEEPER_PIN                      42
+      #define BEEPER_PIN                      37
       // not connected to a pin
-      #define LCD_BACKLIGHT_PIN               65  // backlight LED on A11/D65
+      #define LCD_BACKLIGHT_PIN               -1  // backlight LED on A11/D65
 
-      #define DOGLCD_A0                       44
-      #define DOGLCD_CS                       66
+      #define DOGLCD_A0                       16
+      #define DOGLCD_CS                       17
 
       // GLCD features
       // Uncomment screen orientation
@@ -666,12 +666,12 @@
       //#define LCD_SCREEN_ROT_180
       //#define LCD_SCREEN_ROT_270
 
-      #define BTN_EN1                         40
-      #define BTN_EN2                         63
-      #define BTN_ENC                         59
+      #define BTN_EN1                         31
+      #define BTN_EN2                         33
+      #define BTN_ENC                         35
 
       #define SD_DETECT_PIN                   49
-      #define KILL_PIN                        64
+      #define KILL_PIN                        -1
 
     #elif ENABLED(ZONESTAR_LCD)
 
